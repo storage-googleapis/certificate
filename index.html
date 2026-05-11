@@ -1,0 +1,159 @@
+# Single Certificate Website (One PDF Showcase)
+
+Create a file named `index.html` and replace `YOUR_CERTIFICATE.pdf` with your certificate file name.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Certificate</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .header {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      color: #6b7280;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 16px;
+      border-bottom: 1px solid #e5e7eb;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .btn-primary {
+      background: #2563eb;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #1d4ed8;
+    }
+
+    .btn-secondary {
+      background: #e5e7eb;
+      color: #111827;
+    }
+
+    .btn-secondary:hover {
+      background: #d1d5db;
+    }
+
+    iframe {
+      width: 100%;
+      height: 85vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>My Certificate</h1>
+      <p>View and download my verified certificate.</p>
+    </div>
+
+    <div class="actions">
+      <a href="YOUR_CERTIFICATE.pdf" target="_blank" class="btn btn-primary">
+        Open in New Tab
+      </a>
+      <a href="YOUR_CERTIFICATE.pdf" download class="btn btn-secondary">
+        Download PDF
+      </a>
+    </div>
+
+    <iframe src="YOUR_CERTIFICATE.pdf"></iframe>
+  </div>
+</body>
+</html>
+```
+
+## Folder Structure
+
+```text
+certificate-site/
+│── index.html
+│── YOUR_CERTIFICATE.pdf
+```
+
+## Example
+
+If your certificate file is named `google-data-analytics.pdf`, replace all occurrences of:
+
+```text
+YOUR_CERTIFICATE.pdf
+```
+
+with:
+
+```text
+google-data-analytics.pdf
+```
+
+## How to Publish for Free
+
+1. Create a repository on GitHub.
+2. Upload `index.html` and your PDF.
+3. Enable GitHub Pages.
+4. Your site will be live at:
+
+```text
+https://yourusername.github.io/repository-name/
+```
+
+## Result
+
+Your website will look like a clean online certificate viewer, similar to a direct certificate PDF link, but with:
+
+* Embedded PDF preview
+* Open in new tab button
+* Download button
+* Professional layout
